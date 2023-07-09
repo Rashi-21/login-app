@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #B3E5FC
+}
+
+.container .card {
+    height: 600px;
+    width: 1000px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 10px
+}
+
+.card .card-content-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.card-content-inner {
+    display: inline-block;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    position: relative;
+    background: -webkit-linear-gradient(#0f0f10, #143e91);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    top: 42%;
+    word-spacing: 0.5em;
+    font-size: 40px;
+}
+
+.btn-1 a {
+    display: grid;
+    height: 50px;
+    width: 250px;
+    background: #ef5451f6;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 32%;
+    border-radius: 15px;
+    place-items: center;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-1 a:hover {
+    background-color: #f1221e
+}
+
+.user-datails a {
+    display: grid;
+    height: 50px;
+    width: 250px;
+    background: #d2d061;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 18%;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 2rem;
+    place-items: center;
+    letter-spacing: 3px;
+    font-family: "Roboto", sans-serif;
+}
+
+.user-datails a:hover {
+    background-color: #d3d018;
+}
+
+.register {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    margin-top: 2rem;
+}
+
+.register p {
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    font-weight: 600;
+    color: #efec4a;
+}
+
+.register a {
+    display: grid;
+    text-decoration: none;
+    color: rgb(216, 216, 234);
+    margin-left: 3px;
+    margin-right: 2rem;
+    height: 40px;
+    width: 150px;
+    background: #3c70da;
+    border-radius: 15px;
+    place-items: center;
+    letter-spacing: 3px;
+    font-family: "Roboto", sans-serif
+}
+
+.register a:hover {
+    background-color: #143e91;
+}
+
+@media (max-width: 750px) {
+    .container .card {
+        max-width: 350px;
+    }
+    h1 {
+        top: 30%;
+    }
+}
